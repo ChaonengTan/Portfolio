@@ -7,40 +7,50 @@
 </head>
 <body>
     <nav>
-        <a href="#">Home</a>
+        <ul>
+            <li><a href="#">Chaoneng Tan</a></li>
+            <li><a href="#aboutMe">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#socialMedia">Social</a></li>
+        </ul>
     </nav>
-    <h1>Chaoneng Tan</h1>
-    <section>
-    <h2>Skills</h2>
+    <h1>Portfolio</h1>
+    <section id="aboutMe">
+        <h2>About Me</h2>
+        <ul>
+            <li>
+                <figure>
+                <img src="IMG_20190918_164738.jpg" alt="">
+                <figcaption>Me... When I'm Roaming About</figcaption>
+                </figure>
+            </li>
+            <li>
+                <p>
+                    I am Chaoneng Tan, an 18-year-old Chinese-American young-adult male pursuing a software programming degree and to make an impact on the world.<br>
+                    I live in Oakland California and enjoy playing games, reading light novels, and watching anime.<br>
+                    Influenced by where I live, I went to Lincoln Elementary School in downtown Oakland where I was influenced by a music program which led me to Edna Brewer Middle School.<br>
+                    At Edna Brewer I learned about coding and eventually led me to Oakland Technical High School and now Make School.
+                </p> 
+            </li>
+        </ul>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
         <ul>
             <li>Playing Games</li>
             <li>Sleeping</li>
             <li>Procrastinating</li>
         </ul>
     </section>
-    <section>
-    <h2>About Me</h2>
-        <figure>
-            <img src="IMG_20190918_164738.jpg" alt="">
-            <figcaption>Me... When I'm Roaming About</figcaption>
-        </figure>
-        <p>I am Chaoneng Tan, an 18-year-old Chinese-American young-adult male pursuing a software programming degree and to make an impact on the world. <br>
-            I live in Oakland California and enjoy playing games, reading light novels, and watching anime. <br>
-            Influenced by where I live, I went to Lincoln Elementary School in downtown Oakland where I joined an afterschool music program and liked music which led me to Edna Brewer Middle School. <br>
-            At Edna Brewer I learned about coding and eventually led me to Oakland Technical High School and now Make School.</p>
-    </section>
-    <section>
+    <section id="socialMedia">
     <h2>Social Media</h2>
         <a href="https://youtu.be/oHg5SJYRHA0">Snapchat</a>
     </section>
 </body>
 <style>
-    nav{
-        background-color: black;
-        padding: .5em;
-    }
-    nav a{
-        color: white;
+    /*General*/
+    ul{
+        list-style: none;
     }
     body{
         font-family: 'Times New Roman';
@@ -50,18 +60,53 @@
     h1, h2{
         text-decoration: underline;
     }
-    ul{
-        /* Width is fixed, longer sentences would mess up*/
-        width: 100px;
-        margin: auto;
-        text-align: left;
-    }
     a{
         text-decoration: none;
         color: blue;
     }
     figure{
         opacity: .9;
+    }
+    /*Nav*/
+    nav ul{
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 0;
+        margin: auto;
+        padding: .3em;
+    }
+    nav ul a{
+        font-size: 1.2em;
+        text-decoration: none;
+        color: white;
+        margin: 5px;
+        justify-content: center;
+    }
+    /*About Me*/
+    section#aboutMe{
+        background-color: lightgrey;
+        padding: 2em;
+    }
+    section#aboutMe ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: auto;
+        padding: auto;
+    }
+    /*Skills*/
+    section#skills ul{
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    /*Social Media*/
+    section#socialMedia{
+        background-color: lightgrey;
+        padding: 2em;
     }
 </style>
 </html>
