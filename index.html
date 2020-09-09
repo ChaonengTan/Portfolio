@@ -6,45 +6,60 @@
     <title>Chaoneng Tan Porfolio</title>
 </head>
 <body>
-    <nav>
+    <section id="nav">
         <ul>
-            <li><a href="#">Chaoneng Tan</a></li>
-            <li><a href="#aboutMe">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#socialMedia">Social</a></li>
+            <li><h1>Portfolio</h1></li>
+            <ul>
+                <li><a href="https://github.com/ChaonengTan"><img src="images/githubIcon.jpeg" width="35" height="35"></a></li>
+            </ul>
         </ul>
-    </nav>
-    <h1>Portfolio</h1>
+    </section>
     <section id="aboutMe">
-        <h2>About Me</h2>
+        <h2>About</h2>
         <ul>
             <li>
                 <figure>
-                <img src="IMG_20190918_164738.jpg" alt="">
-                <figcaption>Me... When I'm Roaming About</figcaption>
+                <img src="images/IMG_20190918_164738.jpg" width="200" height="275">
+                <figcaption>Chaoneng Tan</figcaption>
                 </figure>
             </li>
             <li>
-                <p>
-                    I am Chaoneng Tan, an 18-year-old Chinese-American young-adult male pursuing a software programming degree and to make an impact on the world.<br>
-                    I live in Oakland California and enjoy playing games, reading light novels, and watching anime.<br>
-                    Influenced by where I live, I went to Lincoln Elementary School in downtown Oakland where I was influenced by a music program which led me to Edna Brewer Middle School.<br>
-                    At Edna Brewer I learned about coding and eventually led me to Oakland Technical High School and now Make School.
-                </p> 
+                <ul>
+                    <li>Hi! I am Chaoneng Tan, an 18-year-old Chinese-American young-adult male pursuing a software engineer degree and trying to make an impact on the world.<br></li>
+                    <li>I live in Oakland, California and I enjoy playing games, reading light novels, and watching anime.<br></li>
+                    <li>Influenced by the economy around me, my passion for programming stems from creative arts.</li> 
+                </ul>
             </li>
         </ul>
     </section>
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>Playing Games</li>
-            <li>Sleeping</li>
-            <li>Procrastinating</li>
+            <li>
+                <figure>
+                    <img src="images/photoshopIcon.png" width="200" height="200">
+                    <figcaption>Photoshop</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/adobeAnimateIcon.png" width="200" height="200">
+                    <figcaption>Animation</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/VSCodeIcon.png" width="200" height="200">
+                    <figcaption>Programming</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/autodeskMayaIcon.png" width="200" height="200">
+                    <figcaption>3D Modeling</figcaption>
+                </figure>
+            </li>
         </ul>
-    </section>
-    <section id="socialMedia">
-    <h2>Social Media</h2>
-        <a href="https://youtu.be/oHg5SJYRHA0">Snapchat</a>
     </section>
 </body>
 <style>
@@ -54,47 +69,36 @@
     }
     body{
         font-family: 'Times New Roman';
-        text-align: center;
         margin: 0;
-    }
-    h1, h2{
-        text-decoration: underline;
-    }
-    a{
-        text-decoration: none;
-        color: blue;
-    }
-    figure{
-        opacity: .9;
+        text-align: center;
     }
     /*Nav*/
-    nav ul{
-        background-color: black;
+    section#nav ul{
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        padding-left: 0;
-        margin: auto;
-        padding: .3em;
+        justify-content: space-between;
+        margin: 0;
+        align-items: center;
+        margin-right: 1em;
     }
-    nav ul a{
-        font-size: 1.2em;
-        text-decoration: none;
-        color: white;
-        margin: 5px;
-        justify-content: center;
-    }
-    /*About Me*/
+    /*About*/
     section#aboutMe{
-        background-color: lightgrey;
-        padding: 2em;
+        background-color: rgb(227, 249, 255);
+        padding: 1em 1em 1em 0;
+    }
+    section#aboutMe ul li:first-child figcaption{
+        opacity: .9;
     }
     section#aboutMe ul{
         display: flex;
         justify-content: center;
         flex-direction: row;
         margin: auto;
-        padding: auto;
+        align-items: center;
+    }
+    section#aboutMe ul li:nth-child(2) ul{
+        display: flex;
+        flex-direction: column;
     }
     /*Skills*/
     section#skills ul{
@@ -102,11 +106,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
-    /*Social Media*/
-    section#socialMedia{
-        background-color: lightgrey;
-        padding: 2em;
     }
 </style>
 </html>
